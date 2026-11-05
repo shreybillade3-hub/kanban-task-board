@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-brand-50: #eef0ff;
+  --color-brand-500: #5b5ff0;
+  --color-brand-600: #4a4ede;
+  --color-brand-700: #3d40c2;
+}
+
+body {
+  @apply bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100;
+  font-family: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
